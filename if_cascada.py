@@ -36,3 +36,5 @@ elif fruta_es =="uvas" or fruta_es == "uva" :
 #default 
 else:
     print ("No se encontro traduccion")
+    
+    
