@@ -65,31 +65,32 @@ if contrato == "a":
     grado = int(input("Ingrese el grado o escalafón (1 - 5): "))
     salario_minimo = int(input("Ingrese el valor del salario mínimo: "))
 
-    salario_base = salario_minimo * 1.5
+    salario_mensual = salario_minimo * 1.5
 
-    print("El salario base es:", salario_base)
+    print("El salario mensual es:", salario_mensual)
 
     if antiguedad >= 1:
         if antiguedad <= 5:
-            bonificacion = salario_base * 0.01  
+            bonificacion = salario_mensual * 0.01  
         elif antiguedad <= 10:  
-            bonificacion = salario_base * 0.02  
+            bonificacion = salario_mensual * 0.02  
         elif antiguedad > 20:
-            bonificacion = salario_base * 0.03  
+            bonificacion = salario_mensual * 0.03  
         else:
             bonificacion = 0
     else:
         bonificacion = 0
 
-    print("Bonificación por antigüedad:", bonificacion)
+    print("Bonificación por la antigüedad:", bonificacion)
 
-    eps = salario_base * 0.20 
-    pension = salario_base * 0.22  
-    arl = salario_base * 0.001  
+    eps = salario_mensual * 0.20 
+    pension = salario_mensual * 0.22  
+    arl = salario_mensual * 0.001  
 
-    salario_neto = salario_base + bonificacion - eps - pension - arl
+    salario_neto = salario_mensual + bonificacion - eps - pension - arl
 
-    print("El salario neto es:", salario_neto) 
+    print("El salario neto es:", salario_neto)
+
 
 
 # CONTRATO PRESTACION DE SERVICIOS
